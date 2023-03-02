@@ -1,0 +1,158 @@
+nav {
+    text-align: right;
+    padding: 15px 15px 0 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  
+  .nav.active {
+    background: #2F4171;
+    padding: 15px;
+  }
+  
+  .nav.active a {
+    color: #fff;
+  }
+  
+  nav a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  
+  .logo {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .menu-logo{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #e41313;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-text-stroke: 0.5px #fff;
+  }
+  
+  .menu-logo li{
+    list-style: none;
+    margin: 10px;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+   
+  }
+  
+  .menu-logo li a img{
+    width: 30px;
+  }
+
+  .boton{
+    cursor: pointer;
+    color: #fff;
+    background-color: #4154f1;;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact{
+  cursor: pointer;
+  color: #fff;
+  background-color: #4154f1;;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact:hover{
+  text-decoration: none;
+}
+
+.menu-logo h1 {
+    font-size: 25px;
+    color: #e41313;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  @media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 10 0 0 0;
+    }
+    .menu li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav a{
+        margin-right: 5px;
+        font-size: 20px;
+    }
+    
+    .checkbtn{
+      display: block;
+      position: fixed;
+      right: 1px;
+    }
+    .menu{
+      position: fixed;
+      width: 89%;
+      height: 70vh;
+      top: 64px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      display: block;
+      background: #2f4171;
+    }
+    
+    li a:hover, li a.active{
+      background: none;
+      
+    }
+    #check:checked ~ ul{
+      left:0;
+    }
+
+  }

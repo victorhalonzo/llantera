@@ -1,0 +1,12 @@
+iframe {
+  border: 0;
+  margin: auto;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  iframe {
+    width: 300px;
+  }
+}
